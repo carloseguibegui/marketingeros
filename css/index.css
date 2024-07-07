@@ -220,7 +220,7 @@ html {
   }
   
   body {
-    color: #333;
+    color: #37286d;
     background-color: #fff;
     min-height: 100%;
     margin: 0;
@@ -3058,7 +3058,8 @@ html {
   }
   
   body {
-    background-color: var(--black-4);
+    /* background-color: var(--black-4); */
+    background-color: #37286d;
     color: var(--white);
     text-transform: uppercase;
     font-family: Aspektavf, sans-serif;
@@ -3238,7 +3239,8 @@ html {
   }
   
   .section {
-    background-color: var(--black-4);
+    /* background-color: var(--black-4); */
+    background-color: #37286d;
     padding: 100px 5%;
     position: relative;
   }
@@ -3973,7 +3975,8 @@ html {
   
   .navar {
     z-index: 999;
-    background-color: var(--black-4);
+    /* background-color: var(--black-4); */
+    background-color:#2b2051;
     padding: 35px 3%;
     position: fixed;
     top: 0%;
