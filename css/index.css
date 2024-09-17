@@ -4318,6 +4318,10 @@ html {
     margin-top: 100px;
   }
   
+  .margin-200px {
+    margin-top: 200px;
+  }
+  
   .cta {
     text-align: center;
     margin-top: 0;
@@ -4491,7 +4495,7 @@ html {
   .sub-title.absolute {
     z-index: 2;
     position: absolute;
-    top: 347px;
+    top: 10px;
     bottom: auto;
     left: auto;
     right: 296px;
