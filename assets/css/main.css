@@ -359,6 +359,10 @@ h6 {
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
+  .header .logo img {
+    max-height: 25px;
+  }
+  
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
