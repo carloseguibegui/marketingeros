@@ -898,10 +898,14 @@ section,
   padding-bottom: 10px;
 }
 
-.about .content ul i {
+.about .content ul i, .faq-item-custom{
   font-size: 1.25rem;
   margin-right: 4px;
   color: var(--accent-color);
+}
+
+.faq-li-custom{
+  list-style: none;
 }
 
 .about .content p:last-child {
