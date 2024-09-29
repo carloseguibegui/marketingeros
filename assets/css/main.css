@@ -904,9 +904,6 @@ section,
   color: var(--accent-color);
 }
 
-.faq-li-custom{
-  list-style: none;
-}
 
 .about .content p:last-child {
   margin-bottom: 0;
