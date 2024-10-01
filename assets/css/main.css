@@ -909,7 +909,7 @@ section,
   margin-bottom: 0;
 }
 
-.about .content .read-more {
+.about .content .read-more, #nuestros-planes {
   background: var(--accent-color);
   color: var(--contrast-color);
   font-family: var(--heading-font);
@@ -924,22 +924,30 @@ section,
   justify-content: center;
 }
 
-.about .content .read-more i {
+.about .content .read-more i, #nuestros-planes i {
   font-size: 18px;
   margin-left: 5px;
   line-height: 0;
   transition: 0.3s;
 }
 
-.about .content .read-more:hover {
+.about .content .read-more:hover, #nuestros-planes:hover {
   background: color-mix(in srgb, var(--accent-color), black 20%);
   padding-right: 19px;
 }
 
-.about .content .read-more:hover i {
+.about .content .read-more:hover i, #nuestros-planes:hover i {
   margin-left: 10px;
 }
 
+#div-boton-nuestros-planes{
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+#nuestros-planes{
+  width: auto;
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
