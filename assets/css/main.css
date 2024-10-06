@@ -849,7 +849,7 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-.hero .animated {
+.animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -1054,7 +1054,7 @@ section,
   min-height: 400px;
 }
 
-.features .features-item h4 {
+h4{
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 5px 0;

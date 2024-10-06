@@ -24,3 +24,49 @@ function sendEmail(event) {
             document.querySelector(".error-message").style.display = "block";
         });
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const videos = document.getElementsByClassName('video-mp4');
+
+    // Utilizando IntersectionObserver para detectar cuando el video está en el viewport
+    const observer0 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                videos[0].play();  // Reproducir videos cuando está visible
+            } else {
+                videos[0].pause(); // Pausar videos cuando sale del viewport
+            }
+        });
+    }, {
+        threshold: 0.5 // El videos debe estar al menos un 50% visible para reproducirse
+    });
+
+    observer0.observe(videos[0]);
+
+    const observer1 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                videos[1].play();  // Reproducir videos cuando está visible
+            } else {
+                videos[1].pause(); // Pausar videos cuando sale del viewport
+            }
+        });
+    }, {
+        threshold: 0.5 // El videos debe estar al menos un 50% visible para reproducirse
+    });
+
+    observer1.observe(videos[0]);
+
+    const observer2 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                videos[2].play();  // Reproducir videos cuando está visible
+            } else {
+                videos[2].pause(); // Pausar videos cuando sale del viewport
+            }
+        });
+    }, {
+        threshold: 0.5 // El videos debe estar al menos un 50% visible para reproducirse
+    });
+
+    observer2.observe(videos[2]);
+});
