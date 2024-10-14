@@ -1257,8 +1257,13 @@ h4{
   padding: 60px 40px;
   height: 100%;
   border-radius: 5px;
+  transition: 1s;
 }
+.pricing .pricing-item:hover {
+  transform: scale(1.1);
+  border-top-color: var(--accent-color);
 
+}
 .pricing h3 {
   font-weight: 600;
   margin-bottom: 15px;
@@ -1327,16 +1332,20 @@ h4{
   border: 1px solid var(--accent-color);
 }
 
-.pricing .buy-btn:hover {
+/* .pricing .buy-btn:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
-}
+} */
 
-.pricing .featured {
+/* .pricing .featured {
   border-top-color: var(--accent-color);
-}
+} */
 
-.pricing .featured .buy-btn {
+/* .pricing .featured .buy-btn {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+} */
+.pricing-item .buy-btn:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
 }
@@ -1866,4 +1875,25 @@ h4{
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.section-title h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
