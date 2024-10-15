@@ -69,4 +69,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     observer2.observe(videos[2]);
+
+    const observer3 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                videos[3].play();  // Reproducir videos cuando está visible
+            } else {
+                videos[3].pause(); // Pausar videos cuando sale del viewport
+            }
+        });
+    }, {
+        threshold: 0.5 // El videos debe estar al menos un 50% visible para reproducirse
+    });
+
+    observer3.observe(videos[3]);
+
+    const observer4 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                videos[4].play();  // Reproducir videos cuando está visible
+            } else {
+                videos[4].pause(); // Pausar videos cuando sale del viewport
+            }
+        });
+    }, {
+        threshold: 0.5 // El videos debe estar al menos un 50% visible para reproducirse
+    });
+
+    observer4.observe(videos[4]);
 });
