@@ -19,10 +19,12 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
+  --background-color-ferreteria: #FEE66F; /* Background color for the entire website, including individual sections */
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2c4964; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #5846f9; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color-fr: #dbb807; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -136,6 +138,9 @@ h6 {
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
   animation: php-email-form-loading 1s linear infinite;
+}
+.php-email-form-fr .loading:before {
+  border: 3px solid var(--accent-color-fr) !important;
 }
 
 @keyframes php-email-form-loading {
@@ -1896,4 +1901,140 @@ h4{
   right: 0;
   bottom: 0;
   margin: auto;
+}
+
+#hero-ferreteria {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 120px 0 60px 0;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(45deg, var(--background-color-ferreteria) 0%, color-mix(in srgb, var(--surface-color), transparent 10%) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+.accent-background-ferreteria {
+  --background-color: #ffda20;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --accent-color: #ffda20;
+  --surface-color: #927a00;
+  --contrast-color: #ffffff;
+}
+
+
+#banner-ferreteria{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.scrolled .header-fr {
+  --background-color: #ddb801;
+}
+
+#sobre-nosotros-img-fr{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+
+.features .features-item-fr i {
+  font-size: 48px;
+  color: var(--accent-color-fr);
+  margin-right: 20px;
+  line-height: 0;
+}
+
+.features .features-item-fr p {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 0;
+}
+
+.nuestros-planes-fr {
+  background: var(--accent-color-fr) !important;
+  color: var(--contrast-color) !important;
+ }
+
+.nuestros-planes-fr:hover {
+  background: color-mix(in srgb, var(--accent-color-fr), black 20%) !important;
+}
+
+.h2-fr:after {
+  background: var(--accent-color-fr) !important;
+}
+
+.contact .info-item-fr {
+  background: color-mix(in srgb, var(--accent-color-fr), transparent 96%);
+  padding: 30px;
+}
+
+.contact .info-item-fr i {
+  font-size: 38px;
+  line-height: 0;
+  color: var(--accent-color-fr);
+}
+
+.contact .info-item-fr h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.contact .info-item-fr p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+.contact .php-email-form-fr input[type=text],
+.contact .php-email-form-fr input[type=email],
+.contact .php-email-form-fr textarea {
+  color: var(--accent-color-fr);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form-fr input[type=text]:focus,
+.contact .php-email-form-fr input[type=email]:focus,
+.contact .php-email-form-fr textarea:focus {
+  border-color: var(--accent-color-fr);
+}
+
+.contact .php-email-form-fr input[type=text]::placeholder,
+.contact .php-email-form-fr input[type=email]::placeholder,
+.contact .php-email-form-fr textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form-fr button[type=submit] {
+  background: var(--accent-color-fr);
+  color: var(--background-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form-fr button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color-fr), transparent 20%);
+}
+
+.scroll-top-fr{
+  background-color: var(--accent-color-fr);
+}
+
+.scroll-top-fr:hover {
+  background-color: color-mix(in srgb, var(--background-color-ferreteria), transparent 20%);
+  color: var(--contrast-color);
+}
+
+
+.footer-fr {
+  color: var(--default-color);
+  background: linear-gradient(45deg, var(--background-color-ferreteria) 0%, color-mix(in srgb, #927a00, transparent 10%) 100%), url("../img/footer-bg.jpg") center center no-repeat;
 }
