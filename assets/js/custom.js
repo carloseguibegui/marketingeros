@@ -112,9 +112,9 @@ function snow_fall() {
   // Set Propoties
   const numDots = 125;
   const direction = 0.5;
-  const speed = 1.95;
+  const speed = 4.95;
   const size = 3.5;
-  const dotColor = 'rgba(210,245,255,0.33)';
+  const dotColor = 'rgba(240,245,255,0.5)';
   
     // Set the initial dot positions
     const dots = [];
