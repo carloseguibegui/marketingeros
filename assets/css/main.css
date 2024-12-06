@@ -2121,3 +2121,33 @@ a{
   color: #707070;
   font-size: 13px;
 }
+
+
+/* NAVIDAD */
+.hero-navidad{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 120px 0 60px 0;
+  display: flex;
+  align-items: center;
+  /* background:url(../img/navidad-banner-2.jpg); */
+  background: linear-gradient(185deg, #ff3f3f 0%, color-mix(in srgb, #ff9797, transparent 80%) 100%), url(../img/navidad-banner-2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.hero-navidad>div>div>div>h1{
+  color: red;
+}
+.hero-navidad>div>div>div>p{
+  color: grey;
+}
+
+
+#snow_fall {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
