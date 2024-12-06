@@ -2340,3 +2340,36 @@ a{
   color: var(--default-color);
   background: linear-gradient(45deg, var(--navidad) 0%, color-mix(in srgb, #920000, transparent 10%) 100%), url("../img/footer-bg.jpg") center center no-repeat;
 }
+
+
+div:has(> a.btn-get-started-navidad) {
+  padding: 40px;
+}
+
+.oferta-especial-boton:hover{
+  color: white;
+  background-color:var(--navidad);
+}
+
+
+@media (min-width: 1200px) {
+  #titulo-navidad{
+    font-size: 50px;
+    line-height: normal;
+    padding: 50px 50px 0px 50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  #titulo-navidad{
+    font-size: 30px;
+    line-height: normal;
+    padding: 100px 40px 0px 40px;
+  }
+} 
+
+.navmenu-navidad a:hover,
+.navmenu-navidad .active,
+.navmenu-navidad .active:focus {
+  color: var(--navidad) !important;
+}
