@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --navidad:#ff0000;
+  --navidad:#c12a26;
   --background-color-ferreteria: #FEE66F; /* Background color for the entire website, including individual sections */
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
@@ -2162,7 +2162,7 @@ a{
 /* Global Header-navidad on Scroll
 ------------------------------*/
 .scrolled .header-navidad {
-  --background-color: rgb(193 0 0 / 90%);
+  --background-color: #c12a26;
 }
 
 .hero-navidad .btn-get-started-navidad:hover {
@@ -2333,8 +2333,4 @@ a{
 
 #subtitulo-navidad{
   padding: 40px;
-}
-
-#titulo-navidad{
-
 }
