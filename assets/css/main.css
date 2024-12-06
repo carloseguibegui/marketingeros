@@ -2334,3 +2334,9 @@ a{
 #subtitulo-navidad{
   padding: 40px;
 }
+
+
+.footer-navidad {
+  color: var(--default-color);
+  background: linear-gradient(45deg, var(--navidad) 0%, color-mix(in srgb, #920000, transparent 10%) 100%), url("../img/footer-bg.jpg") center center no-repeat;
+}
