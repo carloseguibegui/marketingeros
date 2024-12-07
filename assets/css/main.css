@@ -827,7 +827,7 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  color: var(--accent-color);
+  color: #5846f9;
   background: var(--contrast-color);
 }
 
@@ -2366,10 +2366,15 @@ div:has(> a.btn-get-started-navidad) {
     line-height: normal;
     padding: 100px 40px 0px 40px;
   }
+  
+  .navmenu-navidad a:hover,
+  .navmenu-navidad .active,
+  .navmenu-navidad .active:focus {
+    color: var(--navidad) !important;
+  }
 } 
 
-.navmenu-navidad a:hover,
-.navmenu-navidad .active,
-.navmenu-navidad .active:focus {
-  color: var(--navidad) !important;
+
+.no-bullets {
+  list-style-type: none;
 }
