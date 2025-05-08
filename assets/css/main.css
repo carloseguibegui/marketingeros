@@ -2445,4 +2445,8 @@ h2{
   #caracteristicas>div>div {
     padding-bottom:3rem;
   }
+
+  .card-style-eleven{
+    height: 26rem !important;
+  }
 }
