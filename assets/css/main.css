@@ -4,7 +4,7 @@
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
-*/ 
+*/
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -12,32 +12,46 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Roboto",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Roboto", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --navidad:#c12a26;
-  --background-color-ferreteria: #FEE66F; /* Background color for the entire website, including individual sections */
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2c4964; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #5846f9; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --accent-color-fr: #dbb807; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --navidad: #c12a26;
+  --background-color-ferreteria: #FEE66F;
+  /* Background color for the entire website, including individual sections */
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #2c4964;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #5846f9;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color-fr: #dbb807;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.8);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #5846f9; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba(255, 255, 255, 0.8);
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #5846f9;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -140,6 +154,7 @@ h6 {
   border-top-color: var(--surface-color);
   animation: php-email-form-loading 1s linear infinite;
 }
+
 .php-email-form-fr .loading:before {
   border: 3px solid var(--accent-color-fr) !important;
 }
@@ -366,9 +381,9 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .header .logo img {
-    max-height: 25px;
+    max-height: 40px;
   }
-  
+
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -807,14 +822,16 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  line-height: 1.777em;
+  /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
+  color: white;
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
+  color: #8600e5;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -824,11 +841,12 @@ section,
   border-radius: 4px;
   transition: 0.5s;
   border: 2px solid var(--contrast-color);
+  background-color: white;
 }
 
 .hero .btn-get-started:hover {
-  color: #5846f9;
-  background: var(--contrast-color);
+  color: white;
+  background: #8600e5 !important;
 }
 
 .hero .btn-watch-video {
@@ -861,21 +879,18 @@ section,
 
 @media (max-width: 640px) {
   .hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    font-size: 41px;
+    line-height: 46px;
   }
 
   .hero p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
     margin-bottom: 30px;
   }
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 
@@ -906,7 +921,8 @@ section,
   padding-bottom: 10px;
 }
 
-.about .content ul i, .faq-item-custom{
+.about .content ul i,
+.faq-item-custom {
   font-size: 1.25rem;
   margin-right: 4px;
   color: var(--accent-color);
@@ -917,7 +933,8 @@ section,
   margin-bottom: 0;
 }
 
-.about .content .read-more, #nuestros-planes {
+.about .content .read-more,
+#nuestros-planes {
   background: var(--accent-color);
   color: var(--contrast-color);
   font-family: var(--heading-font);
@@ -932,30 +949,34 @@ section,
   justify-content: center;
 }
 
-.about .content .read-more i, #nuestros-planes i {
+.about .content .read-more i,
+#nuestros-planes i {
   font-size: 18px;
   margin-left: 5px;
   line-height: 0;
   transition: 0.3s;
 }
 
-.about .content .read-more:hover, #nuestros-planes:hover {
+.about .content .read-more:hover,
+#nuestros-planes:hover {
   background: color-mix(in srgb, var(--accent-color), black 20%);
   padding-right: 19px;
 }
 
-.about .content .read-more:hover i, #nuestros-planes:hover i {
+.about .content .read-more:hover i,
+#nuestros-planes:hover i {
   margin-left: 10px;
 }
 
-#div-boton-nuestros-planes{
+#div-boton-nuestros-planes {
   padding-left: 2rem;
   margin-top: 1rem;
 }
 
-#nuestros-planes{
+#nuestros-planes {
   width: auto;
 }
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -1062,7 +1083,7 @@ section,
   min-height: 400px;
 }
 
-h4{
+h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 5px 0;
@@ -1267,11 +1288,13 @@ h4{
   border-radius: 5px;
   transition: 1s;
 }
-.pricing .pricing-item:hover {
+
+/* .pricing .pricing-item:hover {
   transform: scale(1.1);
   border-top-color: var(--accent-color);
 
-}
+} */
+
 .pricing h3 {
   font-weight: 600;
   margin-bottom: 15px;
@@ -1873,12 +1896,13 @@ h4{
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-#sobre-nosotros-img{
+#sobre-nosotros-img {
   width: 60%;
   display: block;
   margin: auto;
 }
-#banner{
+
+#banner {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -1916,6 +1940,7 @@ h4{
   background: linear-gradient(45deg, var(--background-color-ferreteria) 0%, color-mix(in srgb, var(--surface-color), transparent 10%) 100%), url("../img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
 }
+
 .accent-background-ferreteria {
   --background-color: #ffda20;
   --default-color: #ffffff;
@@ -1926,17 +1951,18 @@ h4{
 }
 
 
-#banner-ferreteria{
+#banner-ferreteria {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
+
 .scrolled .header-fr {
   --background-color: #ddb801;
 }
 
-#sobre-nosotros-img-fr{
+#sobre-nosotros-img-fr {
   width: 100%;
   display: block;
   margin: auto;
@@ -1959,7 +1985,7 @@ h4{
 .nuestros-planes-fr {
   background: var(--accent-color-fr) !important;
   color: var(--contrast-color) !important;
- }
+}
 
 .nuestros-planes-fr:hover {
   background: color-mix(in srgb, var(--accent-color-fr), black 20%) !important;
@@ -2027,7 +2053,7 @@ h4{
   background: color-mix(in srgb, var(--accent-color-fr), transparent 20%);
 }
 
-.scroll-top-fr{
+.scroll-top-fr {
   background-color: var(--accent-color-fr);
 }
 
@@ -2041,6 +2067,7 @@ h4{
   color: var(--default-color);
   background: linear-gradient(45deg, var(--background-color-ferreteria) 0%, color-mix(in srgb, #927a00, transparent 10%) 100%), url("../img/footer-bg.jpg") center center no-repeat;
 }
+
 .pricing .pricing-item-fr {
   background-color: var(--surface-color);
   box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
@@ -2050,10 +2077,12 @@ h4{
   border-radius: 5px;
   transition: 1s;
 }
+
 .pricing .pricing-item-fr:hover {
   transform: scale(1.1);
   border-top-color: var(--accent-color-fr);
 }
+
 .pricing-item-fr .buy-btn:hover {
   background: var(--accent-color-fr);
   color: var(--contrast-color);
@@ -2066,24 +2095,26 @@ h4{
   font-family: var(--heading-font);
   margin-bottom: 0;
 }
+
 .pricing .buy-btn-fr {
   color: var(--accent-color-fr);
   border: 1px solid var(--accent-color-fr);
 }
 
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
+
 .floating_btn {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   width: 100px;
   height: 100px;
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   z-index: 1000;
 }
 
@@ -2098,7 +2129,7 @@ a{
   color: #fff;
   width: 60px;
   height: 60px;
-  font-size:30px;
+  font-size: 30px;
   border-radius: 50px;
   text-align: center;
   box-shadow: 2px 2px 3px #999;
@@ -2127,7 +2158,7 @@ a{
 
 
 /* NAVIDAD */
-.hero-navidad{
+.hero-navidad {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -2139,10 +2170,11 @@ a{
   background-size: cover;
 }
 
-.hero-navidad>div>div>div>h1{
+.hero-navidad>div>div>div>h1 {
   color: red;
 }
-.hero-navidad>div>div>div>p{
+
+.hero-navidad>div>div>div>p {
   color: white;
 }
 
@@ -2172,10 +2204,11 @@ a{
   background: var(--navidad);
 }
 
-#offer-deal{
+#offer-deal {
   padding-top: 0px;
 }
-#offer-deal>div{
+
+#offer-deal>div {
   background: url(../img/offer-deal.png);
   color: #ffffff;
   border-color: #ffffff;
@@ -2185,10 +2218,12 @@ a{
   background-size: cover;
   background-position: center;
 }
-*{
+
+* {
   font-family: Nunito !important;
 }
-.offerbanner-title{
+
+.offerbanner-title {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
@@ -2196,7 +2231,7 @@ a{
   color: #ffffff;
 }
 
-.offer-list{
+.offer-list {
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -2227,6 +2262,7 @@ a{
   color: #c12a26;
   border-color: #ffffff;
 }
+
 .offerbanner .offer-list .offer-box .offerbanner-btn {
   margin-bottom: 15px;
 }
@@ -2242,11 +2278,12 @@ a{
   right: 20px;
   bottom: -30px;
 }
-.offerbanner .offer-list .offer-box .offer-icon svg{
+
+.offerbanner .offer-list .offer-box .offer-icon svg {
   fill: white;
 }
 
-.offer-icon svg g{
+.offer-icon svg g {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2259,7 +2296,7 @@ a{
 }
 
 
-#sobre-nosotros-img-navidad{
+#sobre-nosotros-img-navidad {
   width: 100%;
   display: block;
   margin: auto;
@@ -2274,10 +2311,10 @@ a{
 .nuestros-planes-navidad {
   background: var(--navidad) !important;
   color: var(--contrast-color) !important;
- }
+}
 
 
- 
+
 .h2-navidad:after {
   background: var(--navidad) !important;
 }
@@ -2291,10 +2328,12 @@ a{
   border-radius: 5px;
   transition: 1s;
 }
+
 .pricing .pricing-item-navidad:hover {
   transform: scale(1.1);
   border-top-color: var(--navidad);
 }
+
 .pricing-item-navidad .buy-btn:hover {
   background: var(--accent-color-fr);
   color: var(--contrast-color);
@@ -2307,17 +2346,19 @@ a{
   font-family: var(--heading-font);
   margin-bottom: 0;
 }
+
 .pricing .buy-btn-navidad {
   color: var(--navidad);
   border: 1px solid var(--navidad);
 }
+
 .pricing-item-navidad .buy-btn-navidad:hover {
   background: var(--navidad);
   color: var(--contrast-color);
 }
 
 
-.scroll-top-navidad{
+.scroll-top-navidad {
   background-color: var(--navidad);
 }
 
@@ -2333,7 +2374,7 @@ a{
 }
 
 
-#subtitulo-navidad{
+#subtitulo-navidad {
   padding: 40px;
 }
 
@@ -2348,14 +2389,14 @@ div:has(> a.btn-get-started-navidad) {
   padding: 40px;
 }
 
-.oferta-especial-boton:hover{
+.oferta-especial-boton:hover {
   color: white;
-  background-color:var(--navidad);
+  background-color: var(--navidad);
 }
 
 
 @media (min-width: 1200px) {
-  #titulo-navidad{
+  #titulo-navidad {
     font-size: 69px;
     line-height: normal;
     padding: 50px 50px 0px 50px;
@@ -2363,20 +2404,45 @@ div:has(> a.btn-get-started-navidad) {
 }
 
 @media (max-width: 1199px) {
-  #titulo-navidad{
+  #titulo-navidad {
     font-size: 30px;
     line-height: normal;
     padding: 100px 40px 0px 40px;
   }
-  
+
   .navmenu-navidad a:hover,
   .navmenu-navidad .active,
   .navmenu-navidad .active:focus {
     color: var(--navidad) !important;
   }
-} 
+}
 
 
 .no-bullets {
   list-style-type: none;
+}
+
+
+* {
+  opacity: 1 !important;
+}
+
+h2{
+  color: #5846f9;
+  font-weight: bold;
+}
+#pricing>div.container.section-title>p{
+  color: #5846f9;
+  font-weight: bold;
+  font-size: 2.7rem;
+}
+
+@media (min-width:992px) {
+  #caracteristicas>div>div>div:nth-child(1)>div {
+    margin-top: 1.5rem !important;
+  }
+
+  #caracteristicas>div>div {
+    padding-bottom:3rem;
+  }
 }
